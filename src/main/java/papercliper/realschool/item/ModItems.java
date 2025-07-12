@@ -17,7 +17,7 @@ public class ModItems {
 
     public static final Item BASKETBALL = registerItems("basketball", new Item(new Item.Settings()));
 
-//    注册物品
+//  注册物品
     private static Item registerItems(String id, Item item){
 //        弃用的注册策略⬇
 //        return Registry.register(Registries.ITEM, RegistryKey.of(Registries.ITEM.getKey(), Identifier.of(RealSchool.MOD_ID, id)), item);
@@ -25,14 +25,8 @@ public class ModItems {
         return Registry.register(Registries.ITEM, Identifier.of(RealSchool.MOD_ID, id), item);
     }
 
-    private static void addItemToItemGroup(FabricItemGroupEntries fabricItemGroupEntries){
-//        在这里将物品添加到物品栏
-        fabricItemGroupEntries.add(CHALK);
-        fabricItemGroupEntries.add(BASKETBALL);
-    }
     public static void registerModItems(){
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToItemGroup);
-//        注册物品输出日志
-        RealSchool.LOGGER.info("Registering Items");
+//      控制台输出注册物品日志信息
+        RealSchool.LOGGER.info("Registering Items...");
     }
 }
