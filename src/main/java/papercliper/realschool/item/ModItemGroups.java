@@ -18,7 +18,6 @@ public class ModItemGroups {
 //        return RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.of(RealSchool.MOD_ID, id));
 //    }
 //    public static void registerModItemGroups(){
-//        //        20250712:注册物品栏
 //        Registry.register(Registries.ITEM_GROUP, REALSCHOOL_GROUP,
 //                ItemGroup.create(ItemGroup.Row.TOP,
 //                        7).displayName(Text.translatable("itemGroup.realschool_group"))
