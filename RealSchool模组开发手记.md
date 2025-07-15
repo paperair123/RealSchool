@@ -2,7 +2,7 @@
 
 *上一次编辑日期：*
 $$
-2025年7月15日
+2025年7月16日
 $$
 
 ### 一、物品的注册
@@ -74,3 +74,12 @@ $$
 > e.g.
 >
 > `assets/realschool/blockstates/chalk_block.json`
+
+###### 一些细节
+
+1.**方块**应在`data/realschool/loot_table/blocks/(方块英文名).json`中编写掉落物属性；
+
+2.有需要的方块可在`data/minecraft/tags/block/mineable`目录下编写需要的开采工具类型；
+
+
+

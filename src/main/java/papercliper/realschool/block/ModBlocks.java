@@ -14,7 +14,7 @@ public class ModBlocks {
 //  hardness为硬度;resistance为爆炸抗性
 //  原版方块数据见官方文档
     public static final Block CHALK_BLOCK = register("chalk_block",
-        new Block(AbstractBlock.Settings.create().strength(1.5f, 3.0f)));
+        new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5f, 3.0f)));
     public static void registerBlockItems(String id, Block block) {
         Item item = Registry.register(Registries.ITEM, Identifier.of(RealSchool.MOD_ID, id), new BlockItem(block, new Item.Settings()));
         if (item instanceof BlockItem) {
