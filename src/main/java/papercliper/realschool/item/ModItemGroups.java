@@ -32,10 +32,15 @@ public class ModItemGroups {
 //                  方块在前物品在后
 //                  添加方块___BEGIN___
                     entries.add(ModBlocks.CHALK_BLOCK);
+                    entries.add(ModBlocks.GYPSUM_ORE);
+                    entries.add(ModBlocks.LIMESTONE);
 //                  添加方块___END___
 //                  添加物品___BEGIN___
                     entries.add(ModItems.CHALK);
                     entries.add(ModItems.BASKETBALL);
+                    entries.add(ModItems.RAW_GYPSUM);
+                    entries.add(ModItems.CALCINED_GYPSUM);
+                    entries.add(ModItems.SLAKED_LIME_DUST);
 //                  添加物品___END___
                 }).build());
     public static void registerModItemGroups() {

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "calcined_gypsum",
+  "ingredient": {
+    "item": "realschool:gypsum_ore"
+  },
+  "result": {
+    "id": "realschool:calcined_gypsum"
+  }
+}

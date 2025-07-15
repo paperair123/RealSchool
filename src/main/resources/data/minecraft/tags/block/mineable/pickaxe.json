@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "realschool:chalk_block"
+    "realschool:chalk_block",
+    "realschool:gypsum_ore",
+    "realschool:limestone"
   ]
 }

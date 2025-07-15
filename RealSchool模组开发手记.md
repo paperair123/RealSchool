@@ -75,6 +75,16 @@ $$
 >
 > `assets/realschool/blockstates/chalk_block.json`
 
+8.`assets/realschool/models/item/(方块英文名).json` （在这里将方块物品与贴图绑定）
+
+> [!NOTE]
+>
+> e.g.
+>
+> `assets/realschool/models/item/chalk_block.json`
+
+
+
 ###### 一些细节
 
 1.**方块**应在`data/realschool/loot_table/blocks/(方块英文名).json`中编写掉落物属性；

@@ -9,9 +9,10 @@ import papercliper.realschool.RealSchool;
 
 public class ModItems {
     public static final Item CHALK = registerItems("chalk", new Item(new Item.Settings()));
-
     public static final Item BASKETBALL = registerItems("basketball", new Item(new Item.Settings()));
-
+    public static final Item RAW_GYPSUM = registerItems("raw_gypsum", new Item(new Item.Settings()));
+    public static final Item CALCINED_GYPSUM = registerItems("calcined_gypsum", new Item(new Item.Settings()));
+    public static final Item SLAKED_LIME_DUST = registerItems("slaked_lime_dust", new Item(new Item.Settings()));
 //  注册物品
     private static Item registerItems(String id, Item item){
 //        弃用的注册策略⬇
