@@ -1,14 +1,9 @@
 package papercliper.realschool.item;
 
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
-import org.jetbrains.annotations.NotNull;
 import papercliper.realschool.RealSchool;
 
 
@@ -26,7 +21,7 @@ public class ModItems {
     }
 
     public static void registerModItems(){
-//      控制台输出注册物品日志信息
+//      初始化注册物品方法
         RealSchool.LOGGER.info("Registering Items...");
     }
 }

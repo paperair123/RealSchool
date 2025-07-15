@@ -1,9 +1,9 @@
 package papercliper.realschool;
 
 import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import papercliper.realschool.block.ModBlocks;
 import papercliper.realschool.item.ModItemGroups;
 import papercliper.realschool.item.ModItems;
 
@@ -14,12 +14,14 @@ public class RealSchool implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-//		所有方法都需要在此处调用以完成初始化
-
-//      注册物品组
+//		调用各类的初始化方法
+		LOGGER.info("Start initializing...");
+//      调用物品初始化方法
 		ModItems.registerModItems();
-//		注册物品栏
+//		调用物品栏初始化方法
 		ModItemGroups.registerModItemGroups();
-		LOGGER.info("Hello Fabric world!");
+//		调用方块初始化方法
+		ModBlocks.registerModBlocks();
+		LOGGER.info("Initialization complete!");
 	}
 }

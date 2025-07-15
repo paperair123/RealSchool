@@ -2,14 +2,12 @@ package papercliper.realschool.item;
 
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import papercliper.realschool.RealSchool;
+import papercliper.realschool.block.ModBlocks;
 
 public class ModItemGroups {
 //    原版注册方法↓
@@ -31,11 +29,17 @@ public class ModItemGroups {
                 .entries((displayContext, entries) -> {
 //                  在这里为物品栏添加物品
 //                  从上到下的顺序为物品栏中物品排列顺序
+//                  方块在前物品在后
+//                  添加方块___BEGIN___
+                    entries.add(ModBlocks.CHALK_BLOCK);
+//                  添加方块___END___
+//                  添加物品___BEGIN___
                     entries.add(ModItems.CHALK);
                     entries.add(ModItems.BASKETBALL);
-                    entries.add(Items.DIAMOND);
+//                  添加物品___END___
                 }).build());
     public static void registerModItemGroups() {
+//      初始化注册物品栏方法
         RealSchool.LOGGER.info("Registering Item Groups...");
     }
 }

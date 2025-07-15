@@ -1,0 +1,32 @@
+package papercliper.realschool.block;
+
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
+import papercliper.realschool.RealSchool;
+
+public class ModBlocks {
+//  在这里添加方块
+//  hardness为硬度;resistance为爆炸抗性
+//  原版方块数据见官方文档
+    public static final Block CHALK_BLOCK = register("chalk_block",
+        new Block(AbstractBlock.Settings.create().strength(1.5f, 3.0f)));
+    public static void registerBlockItems(String id, Block block) {
+        Item item = Registry.register(Registries.ITEM, Identifier.of(RealSchool.MOD_ID, id), new BlockItem(block, new Item.Settings()));
+        if (item instanceof BlockItem) {
+            ((BlockItem)item).appendBlocks(Item.BLOCK_ITEMS, item);
+        }
+    }
+    public static Block register(String id, Block block) {
+        registerBlockItems(id, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(RealSchool.MOD_ID, id), block);
+    }
+    public static void registerModBlocks() {
+//      初始化注册方块方法
+        RealSchool.LOGGER.info("Registering Blocks...");
+    }
+}
