@@ -14,7 +14,7 @@ public class ModBlocks {
 //  hardness为硬度;resistance为爆炸抗性
 //  原版方块数据见官方文档
     public static final Block CHALK_BLOCK = register("chalk_block",
-        new Block(AbstractBlock.Settings.create().requiresTool().strength(0.3f, 0.1f)));
+        new Block(AbstractBlock.Settings.create().requiresTool().strength(0.6f, 0.3f)));
     public static final Block GYPSUM_ORE = register("gypsum_ore",
         new Block(AbstractBlock.Settings.create().requiresTool().strength(0.75f, 1.5f)));
     public static final Block LIMESTONE = register("limestone",
