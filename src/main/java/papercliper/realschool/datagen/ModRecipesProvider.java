@@ -37,6 +37,8 @@ public class ModRecipesProvider extends FabricRecipeProvider {
 //      在这里编写可互相转化的物品的配方，详见模组开发手记3.5.1中的内容
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.CHALK,
                 RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHALK_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.CALCINED_GYPSUM,
+                RecipeCategory.BUILDING_BLOCKS, ModBlocks.GYPSUM_BLOCK);
 
 //      在这里编写熔炉配方，详见模组开发手记3.5.2中的内容
         offerSmelting(exporter, CALCINED_GYPSUM, RecipeCategory.MISC, ModItems.CALCINED_GYPSUM,
@@ -59,13 +61,22 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SUGAR, 3)
                 .pattern("###")
                 .input('#', Ingredient.ofItems(Items.BEETROOT))
-                .criterion("has_item", RecipeProvider.conditionsFromItem(Items.BEETROOT))
+                .criterion("has_beetroot", RecipeProvider.conditionsFromItem(Items.BEETROOT))
                 .offerTo(exporter, Identifier.of(RealSchool.MOD_ID, "beetroot_to_sugar"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BASKETBALL, 1)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern("XXX")
+                .input('X', Ingredient.ofItems(Items.LEATHER))
+                .input('Y', Ingredient.ofItems(Items.SLIME_BALL))
+                .criterion("has_leather", RecipeProvider.conditionsFromItem(Items.LEATHER))
+                .criterion("has_slime_ball", RecipeProvider.conditionsFromItem(Items.SLIME_BALL))
+                .offerTo(exporter, Identifier.of(RealSchool.MOD_ID, "basketball_recipe"));
 
 //      在这里编写无序合成配方，详见模组开发手记3.5.4中的内容
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHALK_BLOCK, 3)
                 .input(ModItems.CHALK)
-                .criterion("has_item", RecipeProvider.conditionsFromItem(ModItems.CHALK))
+                .criterion("has_chalk", RecipeProvider.conditionsFromItem(ModItems.CHALK))
                 .offerTo(exporter, Identifier.of(RealSchool.MOD_ID, "chalk_to_chalk_block"));
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CHALK)
                 .input(ModItems.CALCINED_GYPSUM)

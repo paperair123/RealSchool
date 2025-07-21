@@ -31,6 +31,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 //      普通方块掉落物
         addDrop(ModBlocks.CHALK_BLOCK);
         addDrop(ModBlocks.LIMESTONE);
+        addDrop(ModBlocks.GYPSUM_BLOCK);
 
 //      掉落物只有一个的矿石方块
 //      addDrop(ModBlocks.GYPSUM_ORE, oreDrops(ModBlocks.GYPSUM_ORE, ModItems.RAW_GYPSUM));

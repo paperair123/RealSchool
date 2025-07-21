@@ -34,6 +34,7 @@ public class ModItemGroups {
                     entries.add(ModBlocks.CHALK_BLOCK);
                     entries.add(ModBlocks.GYPSUM_ORE);
                     entries.add(ModBlocks.LIMESTONE);
+                    entries.add(ModBlocks.GYPSUM_BLOCK);
 //                  添加方块___END___
 //                  添加物品___BEGIN___
                     entries.add(ModItems.CHALK);

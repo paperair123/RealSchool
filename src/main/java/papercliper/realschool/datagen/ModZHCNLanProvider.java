@@ -28,6 +28,7 @@ public class ModZHCNLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.CHALK_BLOCK, "粉笔块");
         translationBuilder.add(ModBlocks.GYPSUM_ORE, "石膏矿石");
         translationBuilder.add(ModBlocks.LIMESTONE, "石灰石");
+        translationBuilder.add(ModBlocks.GYPSUM_BLOCK, "石膏块");
 
 //      添加物品栏的中文翻译
         translationBuilder.add("itemGroup.realschool_group", "真实学校");

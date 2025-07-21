@@ -19,6 +19,8 @@ public class ModBlocks {
         new Block(AbstractBlock.Settings.create().requiresTool().strength(0.75f, 1.5f)));
     public static final Block LIMESTONE = register("limestone",
         new Block(AbstractBlock.Settings.create().requiresTool().strength(1.25f, 4.0f)));
+    public static final Block GYPSUM_BLOCK = register("gypsum_block",
+        new Block(AbstractBlock.Settings.create().requiresTool().strength(1.5f, 6.0f)));
 
     public static void registerBlockItems(String id, Block block) {
         Item item = Registry.register(Registries.ITEM, Identifier.of(RealSchool.MOD_ID, id), new BlockItem(block, new Item.Settings()));

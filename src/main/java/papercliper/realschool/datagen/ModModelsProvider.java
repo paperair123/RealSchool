@@ -19,6 +19,7 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHALK_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GYPSUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIMESTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GYPSUM_BLOCK);
     }
 
     @Override

@@ -28,6 +28,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.CHALK_BLOCK, "Chalk Block");
         translationBuilder.add(ModBlocks.GYPSUM_ORE, "Gypsum Ore");
         translationBuilder.add(ModBlocks.LIMESTONE, "Limestone");
+        translationBuilder.add(ModBlocks.GYPSUM_BLOCK, "Gypsum Block");
 
 //      添加物品栏的英文翻译
         translationBuilder.add("itemGroup.realschool_group", "Real School");

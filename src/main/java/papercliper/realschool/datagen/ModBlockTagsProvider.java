@@ -19,7 +19,8 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 //              需要镐子采集的方块
                 .add(ModBlocks.CHALK_BLOCK)
                 .add(ModBlocks.GYPSUM_ORE)
-                .add(ModBlocks.LIMESTONE);
+                .add(ModBlocks.LIMESTONE)
+                .add(ModBlocks.GYPSUM_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
 //              需要石质工具采集的方块
