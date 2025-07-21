@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "realschool:chalk"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "realschool:chalk_block"
+  }
+}

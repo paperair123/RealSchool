@@ -1,0 +1,11 @@
+{
+  "block.realschool.chalk_block": "Chalk Block",
+  "block.realschool.gypsum_ore": "Gypsum Ore",
+  "block.realschool.limestone": "Limestone",
+  "item.realschool.basketball": "Basketball",
+  "item.realschool.calcined_gypsum": "Calcined Gypsum",
+  "item.realschool.chalk": "Chalk",
+  "item.realschool.raw_gypsum": "Raw Gypsum",
+  "item.realschool.slaked_lime_dust": "Slaked Lime Dust",
+  "itemGroup.realschool_group": "Real School"
+}

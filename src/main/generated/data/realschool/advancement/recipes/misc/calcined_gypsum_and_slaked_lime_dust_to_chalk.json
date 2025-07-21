@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_calcined_gypsum": {
+      "conditions": {
+        "items": [
+          {
+            "items": "realschool:calcined_gypsum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_slaked_lime_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "realschool:slaked_lime_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "realschool:calcined_gypsum_and_slaked_lime_dust_to_chalk"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_calcined_gypsum",
+      "has_slaked_lime_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "realschool:calcined_gypsum_and_slaked_lime_dust_to_chalk"
+    ]
+  }
+}
