@@ -11,7 +11,7 @@ import java.util.concurrent.CompletableFuture;
 public class ModENUSLanProvider extends FabricLanguageProvider {
     public ModENUSLanProvider(FabricDataOutput dataOutput,
                               CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
-        super(dataOutput, "en-us", registryLookup);
+        super(dataOutput, "en_us", registryLookup);
     }
 
     @Override

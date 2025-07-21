@@ -11,7 +11,7 @@ import java.util.concurrent.CompletableFuture;
 public class ModZHCNLanProvider extends FabricLanguageProvider {
     public ModZHCNLanProvider(FabricDataOutput dataOutput,
                               CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
-        super(dataOutput, "zh-cn", registryLookup);
+        super(dataOutput, "zh_cn", registryLookup);
     }
 
     @Override
@@ -25,7 +25,7 @@ public class ModZHCNLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.SLAKED_LIME_DUST, "熟石灰粉");
 
 //      添加方块的中文翻译
-        translationBuilder.add(ModBlocks.CHALK_BLOCK, "粉笔快");
+        translationBuilder.add(ModBlocks.CHALK_BLOCK, "粉笔块");
         translationBuilder.add(ModBlocks.GYPSUM_ORE, "石膏矿石");
         translationBuilder.add(ModBlocks.LIMESTONE, "石灰石");
 
