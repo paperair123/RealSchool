@@ -42,6 +42,7 @@ public class ModItemGroups {
                     entries.add(ModItems.RAW_GYPSUM);
                     entries.add(ModItems.CALCINED_GYPSUM);
                     entries.add(ModItems.SLAKED_LIME_DUST);
+                    entries.add(ModItems.PENCIL_COOKIE);
 //                  添加物品___END___
                 }).build());
     public static void registerModItemGroups() {

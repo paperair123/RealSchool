@@ -13,6 +13,7 @@ public class ModItems {
     public static final Item RAW_GYPSUM = registerItems("raw_gypsum", new Item(new Item.Settings()));
     public static final Item CALCINED_GYPSUM = registerItems("calcined_gypsum", new Item(new Item.Settings()));
     public static final Item SLAKED_LIME_DUST = registerItems("slaked_lime_dust", new Item(new Item.Settings()));
+    public static final Item PENCIL_COOKIE = registerItems("pencil_cookie", new Item(new Item.Settings().food(ModFoodComponents.PENCIL_COOKIE)));
 //  注册物品
     private static Item registerItems(String id, Item item){
 //        弃用的注册策略⬇
