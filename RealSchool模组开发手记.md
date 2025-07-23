@@ -2,7 +2,7 @@
 
 *上一次编辑日期：*
 $$
-2025年7月22日
+2025年7月23日
 $$
 
 ### 一、物品的注册
@@ -175,7 +175,47 @@ public static final Item PENCIL_COOKIE = registerItems("pencil_cookie", new Item
 
 在所有数据编写完毕后，运行Gradle中的Data Generation任务完成数据生成。
 
+### 四、使用Mixin修改游戏的源代码
 
+​	Mixin可以在Minecraft的源代码中插入我们自己写的代码，从而达到修改或增加游戏功能的目的。不过使用Mixin可能会调用到游戏原有的方法或者访问一些私有字段，若同时安装多个模组可能会导致冲突，所以不应该在模组开发中大量使用Mixin。
 
+###### 如何使用Mixin
 
+​	使用Mixin需要编辑2个文件，分别为`papercliper/realschool/mixin/ExampleMixin.java`和`realschool.mixins.json`，以下是一个Mixin的示例。
+```java
+package papercliper.realschool.mixin;
+
+import net.minecraft.server.MinecraftServer;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+@Mixin(MinecraftServer.class) // 表示注入的类为位于MinecraftServer.java中
+public class ExampleMixin {
+    @Inject(at = @At("HEAD"), method = "loadWorld")
+    // "inject"为插入注解 "method"表示插入的方法 "HEAD"表示在方法的第一行插入代码
+    private void init(CallbackInfo info) {
+       System.out.println("Hello Minecraft!");
+    }
+}
+```
+```json
+{
+  "required": true,
+  "package": "papercliper.realschool.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ExampleMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
+```
+
+​	以上代码实现了在游戏加载世界过程中在控制台输出”Hello Minecraft!“的功能，实际上会在控制台输出`[Server thread/INFO] (Minecraft) [STDOUT]: Hello Minecraft!`
 

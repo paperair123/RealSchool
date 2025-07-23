@@ -3,7 +3,9 @@
   "package": "papercliper.realschool.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "ExampleMixin"
+    "EndermanEntityMixin",
+    "ExampleMixin",
+    "GrassColorsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
