@@ -2,10 +2,12 @@
 
 *上一次编辑日期：*
 $$
-2025年7月21日
+2025年7月22日
 $$
 
 ### 一、物品的注册
+
+#### 一般物品的注册
 
 ###### 需要修改的文件
 
@@ -34,6 +36,24 @@ $$
 > `assets/realschool/textures/item/basketball.png`
 
 
+
+#### 食品物品的注册
+
+食品物品的注册与一般物品大致相同，但需要在`papercliper/realschool/item/ModFoodComponents.java`中编写食物组件，以下是一个代码示例。
+```java
+public static final FoodComponent PENCIL_COOKIE = new FoodComponent.Builder()
+            .nutrition(2) // 食物恢复的饥饿值
+            .saturationModifier(0.1f) // 食物的饱和度
+//          吃下食物的效果，第一个值为效果时长(刻)，第二个值为出现该效果的几率
+            .statusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 300), 1.0f)
+            .alwaysEdible() // 食物可以在任意时刻食用
+            .build(); // 这是构建器模式的最后一步，它根据之前设置的所有属性，创建并返回一个完整的FoodComponent对象
+```
+
+在完成食物组件编写后，按照正常物品处理即可，但注册物品时应增加`food()`方法，以下是一个示例。
+```java
+public static final Item PENCIL_COOKIE = registerItems("pencil_cookie", new Item(new Item.Settings().food(ModFoodComponents.PENCIL_COOKIE)));
+```
 
 ### 二、方块的注册
 
@@ -132,7 +152,7 @@ $$
 > ```java
 > offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, CampfireCookingRecipe::new, 600, ModItems.RAW_GYPSUM, ModItems.CALCINED_GYPSUM, 0.35f);
 > ```
-> 4.如果是有序合成配方，则调用`ShapedRecipeJsonBuilder.create()`方法以下是一个示例，可参考编写类似配方。
+> 4.如果是有序合成配方，则调用`ShapedRecipeJsonBuilder.create()`方法，以下是一个示例，可参考编写类似配方。
 >
 > *”创建一个名为 `realschool:beetroot_to_sugar` 的**有序合成配方**。当玩家的背包里有**甜菜根**时，这个配方就会解锁。这个配方的形状是1x3，需要**3个甜菜根**，合成后会得到**3个糖**。这个配方在配方书中属于**杂项**类别。“*以下是该需求的代码实现。
 >

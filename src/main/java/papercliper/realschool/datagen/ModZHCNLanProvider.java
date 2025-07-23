@@ -23,6 +23,7 @@ public class ModZHCNLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.CALCINED_GYPSUM, "熟石膏");
         translationBuilder.add(ModItems.RAW_GYPSUM, "生石膏");
         translationBuilder.add(ModItems.SLAKED_LIME_DUST, "熟石灰粉");
+        translationBuilder.add(ModItems.PENCIL_COOKIE, "铅笔饼干");
 
 //      添加方块的中文翻译
         translationBuilder.add(ModBlocks.CHALK_BLOCK, "粉笔块");

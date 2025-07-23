@@ -23,6 +23,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.CALCINED_GYPSUM, "Calcined Gypsum");
         translationBuilder.add(ModItems.RAW_GYPSUM, "Raw Gypsum");
         translationBuilder.add(ModItems.SLAKED_LIME_DUST, "Slaked Lime Dust");
+        translationBuilder.add(ModItems.PENCIL_COOKIE, "Pencil Cookie");
 
 //      添加方块的英文翻译
         translationBuilder.add(ModBlocks.CHALK_BLOCK, "Chalk Block");

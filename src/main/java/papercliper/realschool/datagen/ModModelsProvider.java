@@ -30,5 +30,6 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CALCINED_GYPSUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_GYPSUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.SLAKED_LIME_DUST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PENCIL_COOKIE, Models.GENERATED);
     }
 }

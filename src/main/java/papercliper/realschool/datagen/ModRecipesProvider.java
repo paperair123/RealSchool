@@ -78,7 +78,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .input(ModItems.CHALK)
                 .criterion("has_chalk", RecipeProvider.conditionsFromItem(ModItems.CHALK))
                 .offerTo(exporter, Identifier.of(RealSchool.MOD_ID, "chalk_to_chalk_block"));
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CHALK)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CHALK, 1)
                 .input(ModItems.CALCINED_GYPSUM)
                 .input(ModItems.SLAKED_LIME_DUST)
                 .criterion("has_calcined_gypsum",
@@ -87,5 +87,12 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                         RecipeProvider.conditionsFromItem(ModItems.SLAKED_LIME_DUST))
                 .offerTo(exporter, Identifier.of(RealSchool.MOD_ID,
                         "calcined_gypsum_and_slaked_lime_dust_to_chalk"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.PENCIL_COOKIE, 1)
+                .input(Items.COOKIE)
+                .input(Items.YELLOW_DYE)
+                .input(Items.PINK_DYE)
+                .input(Items.STICK)
+                .criterion("has_cookie", RecipeProvider.conditionsFromItem(Items.COOKIE))
+                .offerTo(exporter, Identifier.of(RealSchool.MOD_ID, "pencil_cookie"));
     }
 }
