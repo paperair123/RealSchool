@@ -43,6 +43,7 @@ public class ModItemGroups {
                     entries.add(ModItems.CALCINED_GYPSUM);
                     entries.add(ModItems.SLAKED_LIME_DUST);
                     entries.add(ModItems.PENCIL_COOKIE);
+                    entries.add(ModItems.EXERCISE_BOOK);
 //                  添加物品___END___
                 }).build());
     public static void registerModItemGroups() {
