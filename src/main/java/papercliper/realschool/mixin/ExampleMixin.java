@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class ExampleMixin {
 	@Inject(at = @At("HEAD"), method = "loadWorld")
 	private void init(CallbackInfo info) {
-		// 在MinecraftServer.loadWorld()的第一行插入代码
-		System.out.println("Hello Minecraft!");
+//		在MinecraftServer.loadWorld()的第一行插入代码
+//		System.out.println("Hello Minecraft!");
 	}
 }

@@ -1,4 +1,4 @@
-// 1.21	2025-07-22T22:39:20.2571916	RealSchool/Recipes
+// 1.21	2025-07-25T00:26:59.6664856	RealSchool/Recipes
 893d00d09b4ce3fc4c3bf6fbe96721c955e073a0 data\realschool\advancement\recipes\misc\slaked_lime_dust_from_smelting_limestone.json
 fcb38b66879f7cabffa3437e4efd968cbc46550b data\realschool\advancement\recipes\misc\calcined_gypsum.json
 0c619231fbc576f89e3bcef816f63aad375c9369 data\realschool\recipe\calcined_gypsum_from_smelting_gypsum_ore.json
@@ -10,11 +10,13 @@ fcb38b66879f7cabffa3437e4efd968cbc46550b data\realschool\advancement\recipes\mis
 99cea457c7dab4670fdd3d0dd2d593b8956fcb05 data\realschool\advancement\recipes\building_blocks\chalk_block.json
 30dab170f652c0570816ae4e1fae9588855415d4 data\realschool\recipe\chalk_block.json
 7b0a65abbdad1f5ae192f5f865bea8d45ea724a4 data\realschool\recipe\slaked_lime_dust_from_smelting_limestone.json
+208a9d9fd85db9935cfd650fe7d210ec6c079820 data\realschool\recipe\exercise_book.json
 2c03697082536ab1636dc83c597af2cfc2fc6c8c data\realschool\recipe\chalk_to_chalk_block.json
 85510004e03668a069b4d04f63eb669d01f7615d data\realschool\advancement\recipes\misc\basketball_recipe.json
 446d1d7e11b9ba0c18117d305b0ebee9c188dbe7 data\realschool\advancement\recipes\building_blocks\gypsum_block.json
 df4b1439b3b1cc62390b90efe80c0f63fdb07f49 data\realschool\recipe\pencil_cookie.json
 a89406e70a59c8fa2e7ff0ae67519191a529dabe data\realschool\advancement\recipes\misc\chalk.json
+332189f58d89ddada150f004daf81a0adca3ef39 data\realschool\advancement\recipes\misc\exercise_book.json
 052aa35f03271f3e7f52ed6e2370058077596afc data\realschool\recipe\gypsum_block.json
 dbb363765e8d7dec1eec846ce3f49eaaebdd0575 data\realschool\recipe\calcined_gypsum_from_campfire_cooking.json
 984854b0f3376aa0cf6bdd417a8d8f5dc0c24a57 data\realschool\advancement\recipes\misc\beetroot_to_sugar.json

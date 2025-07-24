@@ -72,6 +72,15 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion("has_leather", RecipeProvider.conditionsFromItem(Items.LEATHER))
                 .criterion("has_slime_ball", RecipeProvider.conditionsFromItem(Items.SLIME_BALL))
                 .offerTo(exporter, Identifier.of(RealSchool.MOD_ID, "basketball_recipe"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.EXERCISE_BOOK, 1)
+                .pattern("SSS")
+                .pattern("PPP")
+                .pattern("PPP")
+                .input('S', Ingredient.ofItems(Items.STRING))
+                .input('P', Ingredient.ofItems(Items.PAPER))
+                .criterion("has_paper", RecipeProvider.conditionsFromItem(Items.PAPER))
+                .criterion("has_string", RecipeProvider.conditionsFromItem(Items.STRING))
+                .offerTo(exporter, Identifier.of(RealSchool.MOD_ID, "exercise_book"));
 
 //      在这里编写无序合成配方，详见模组开发手记3.5.4中的内容
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHALK_BLOCK, 3)
