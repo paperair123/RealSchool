@@ -25,6 +25,7 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.SLAKED_LIME_DUST, "Slaked Lime Dust");
         translationBuilder.add(ModItems.PENCIL_COOKIE, "Pencil Cookie");
         translationBuilder.add(ModItems.EXERCISE_BOOK, "Exercise Book");
+        translationBuilder.add(ModItems.PROSPECTOR, "Prospector");
 
 //      添加方块的英文翻译
         translationBuilder.add(ModBlocks.CHALK_BLOCK, "Chalk Block");
