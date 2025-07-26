@@ -5,6 +5,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import papercliper.realschool.RealSchool;
+import papercliper.realschool.item.custom.Prospector;
 
 
 public class ModItems {
@@ -15,6 +16,7 @@ public class ModItems {
     public static final Item SLAKED_LIME_DUST = registerItems("slaked_lime_dust", new Item(new Item.Settings()));
     public static final Item PENCIL_COOKIE = registerItems("pencil_cookie", new Item(new Item.Settings().food(ModFoodComponents.PENCIL_COOKIE)));
     public static final Item EXERCISE_BOOK = registerItems("exercise_book", new Item(new Item.Settings()));
+    public static final Item PROSPECTOR = registerItems("prospector", new Prospector(new Item.Settings().maxDamage(127)));
 //  注册物品
     private static Item registerItems(String id, Item item){
 //        弃用的注册策略⬇

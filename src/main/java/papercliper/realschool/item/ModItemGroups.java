@@ -44,6 +44,7 @@ public class ModItemGroups {
                     entries.add(ModItems.SLAKED_LIME_DUST);
                     entries.add(ModItems.PENCIL_COOKIE);
                     entries.add(ModItems.EXERCISE_BOOK);
+                    entries.add(ModItems.PROSPECTOR);
 //                  添加物品___END___
                 }).build());
     public static void registerModItemGroups() {
