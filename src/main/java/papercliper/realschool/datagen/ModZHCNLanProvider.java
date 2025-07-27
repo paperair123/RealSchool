@@ -26,6 +26,8 @@ public class ModZHCNLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.PENCIL_COOKIE, "铅笔饼干");
         translationBuilder.add(ModItems.EXERCISE_BOOK, "必刷题");
         translationBuilder.add(ModItems.PROSPECTOR, "探矿器");
+        translationBuilder.add(ModItems.BAD_APPLE, "虫蚀苹果");
+        translationBuilder.add(ModItems.MEMORY_BREAD, "记忆面包");
 
 //      添加方块的中文翻译
         translationBuilder.add(ModBlocks.CHALK_BLOCK, "粉笔块");

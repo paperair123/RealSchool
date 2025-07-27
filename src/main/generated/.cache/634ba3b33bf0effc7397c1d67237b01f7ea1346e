@@ -1,4 +1,5 @@
-// 1.21	2025-07-27T00:14:57.076127	RealSchool/Recipes
+// 1.21	2025-07-27T20:11:10.5639566	RealSchool/Recipes
+f2f4a60439e019e65a3d52c740ea644531301cf2 data\realschool\recipe\memory_bread.json
 893d00d09b4ce3fc4c3bf6fbe96721c955e073a0 data\realschool\advancement\recipes\misc\slaked_lime_dust_from_smelting_limestone.json
 fcb38b66879f7cabffa3437e4efd968cbc46550b data\realschool\advancement\recipes\misc\calcined_gypsum.json
 0c619231fbc576f89e3bcef816f63aad375c9369 data\realschool\recipe\calcined_gypsum_from_smelting_gypsum_ore.json
@@ -8,6 +9,7 @@ fcb38b66879f7cabffa3437e4efd968cbc46550b data\realschool\advancement\recipes\mis
 4c3571dc88094de65240023c87980dac531e639b data\realschool\recipe\calcined_gypsum_and_slaked_lime_dust_to_chalk.json
 963c7bfcdf10155d0a293a3137c75ccf90b4bd96 data\realschool\advancement\recipes\food\pencil_cookie.json
 99cea457c7dab4670fdd3d0dd2d593b8956fcb05 data\realschool\advancement\recipes\building_blocks\chalk_block.json
+5e3ee532f0b9da557940481dcddb495fb67a62d2 data\realschool\advancement\recipes\food\memory_bread.json
 30dab170f652c0570816ae4e1fae9588855415d4 data\realschool\recipe\chalk_block.json
 7b0a65abbdad1f5ae192f5f865bea8d45ea724a4 data\realschool\recipe\slaked_lime_dust_from_smelting_limestone.json
 208a9d9fd85db9935cfd650fe7d210ec6c079820 data\realschool\recipe\exercise_book.json

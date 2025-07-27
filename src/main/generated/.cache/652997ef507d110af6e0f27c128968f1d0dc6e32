@@ -1,8 +1,9 @@
-// 1.21	2025-07-27T00:14:57.1020574	RealSchool/Model Definitions
+// 1.21	2025-07-27T20:11:10.5800311	RealSchool/Model Definitions
 ebd54bfd6caa245499fbe95a2fb1bad95528b409 assets\realschool\models\block\gypsum_ore.json
 9bac02fb693100a665f5da6a2f3c6a6ed186ada2 assets\realschool\blockstates\chalk_block.json
 a7592a16532d89f1b7e2b66df6c92f399368cde3 assets\realschool\models\item\gypsum_ore.json
 56a13733177bc13e5b4f6d882a7504ea81d754ff assets\realschool\models\item\chalk.json
+68f1ca5cf4357485e18292c34da1109aefd325aa assets\realschool\models\item\memory_bread.json
 7c5de5298bdb30fb740120871e71d6a32640c848 assets\realschool\models\block\chalk_block.json
 313cd232ca7e21a1eb989e9c77535d4028a9266f assets\realschool\blockstates\gypsum_block.json
 f23dbd12f039202b351e21e8e301b7151bc9a7f1 assets\realschool\models\item\chalk_block.json
@@ -18,4 +19,5 @@ d970856a14293d4456fb056e46f720e67c5a7c78 assets\realschool\models\item\calcined_
 1d009c9e7186747ffca02ff0807b19f1e25417b0 assets\realschool\models\item\exercise_book.json
 82d491b9ebd7b856e93518761271ec1560b55f9f assets\realschool\blockstates\limestone.json
 9cb36a964ea3859c3e61850604485f4fb0787bc9 assets\realschool\models\item\prospector.json
+3249503c361a0b9af51fe5426393e07cdfa30092 assets\realschool\models\item\bad_apple.json
 90f6ae3bf0785327efb6f2fdf103537d16e5cc58 assets\realschool\models\item\slaked_lime_dust.json
