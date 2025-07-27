@@ -103,5 +103,11 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .input(Items.STICK)
                 .criterion("has_cookie", RecipeProvider.conditionsFromItem(Items.COOKIE))
                 .offerTo(exporter, Identifier.of(RealSchool.MOD_ID, "pencil_cookie"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MEMORY_BREAD, 1)
+                .input(Items.BOOK)
+                .input(Items.BREAD)
+                .criterion("has_book", RecipeProvider.conditionsFromItem(Items.BOOK))
+                .criterion("has_bread", RecipeProvider.conditionsFromItem(Items.BREAD))
+                .offerTo(exporter, Identifier.of(RealSchool.MOD_ID, "memory_bread"));
     }
 }

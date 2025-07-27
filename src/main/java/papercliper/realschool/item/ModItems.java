@@ -17,6 +17,8 @@ public class ModItems {
     public static final Item PENCIL_COOKIE = registerItems("pencil_cookie", new Item(new Item.Settings().food(ModFoodComponents.PENCIL_COOKIE)));
     public static final Item EXERCISE_BOOK = registerItems("exercise_book", new Item(new Item.Settings()));
     public static final Item PROSPECTOR = registerItems("prospector", new Prospector(new Item.Settings().maxDamage(127)));
+    public static final Item BAD_APPLE = registerItems("bad_apple", new Item(new Item.Settings().food(ModFoodComponents.BAD_APPLE)));
+    public static final Item MEMORY_BREAD = registerItems("memory_bread", new Item(new Item.Settings().food(ModFoodComponents.MEMORY_BREAD)));
 //  注册物品
     private static Item registerItems(String id, Item item){
 //        弃用的注册策略⬇

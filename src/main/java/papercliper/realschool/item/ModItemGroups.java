@@ -45,6 +45,8 @@ public class ModItemGroups {
                     entries.add(ModItems.PENCIL_COOKIE);
                     entries.add(ModItems.EXERCISE_BOOK);
                     entries.add(ModItems.PROSPECTOR);
+                    entries.add(ModItems.BAD_APPLE);
+                    entries.add(ModItems.MEMORY_BREAD);
 //                  添加物品___END___
                 }).build());
     public static void registerModItemGroups() {

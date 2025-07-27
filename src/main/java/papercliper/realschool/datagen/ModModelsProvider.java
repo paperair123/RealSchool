@@ -33,5 +33,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PENCIL_COOKIE, Models.GENERATED);
         itemModelGenerator.register(ModItems.EXERCISE_BOOK, Models.GENERATED);
         itemModelGenerator.register(ModItems.PROSPECTOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BAD_APPLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MEMORY_BREAD, Models.GENERATED);
     }
 }
