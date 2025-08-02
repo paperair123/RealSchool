@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_gypsum_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "realschool:gypsum_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:calcined_gypsum_from_blasting_gypsum_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_gypsum_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:calcined_gypsum_from_blasting_gypsum_ore"
+    ]
+  }
+}

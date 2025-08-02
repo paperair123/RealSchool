@@ -1,5 +1,7 @@
-// 1.21	2025-07-27T20:11:10.5750475	RealSchool/Block Loot Tables
+// 1.21	2025-08-02T18:18:25.2950429	RealSchool/Block Loot Tables
+1c9a7fcb136624fe9e1774dd7d0615a831b9d699 data\realschool\loot_table\blocks\copper_nickel_ore.json
 5efd0902faeb6980cadc2451ed3efedbdd6db658 data\realschool\loot_table\blocks\gypsum_ore.json
+f4545a8ddc1351c3c7fed1faf523c1f44b3295f8 data\realschool\loot_table\blocks\bauxite_ore.json
 0476ee91902285a9c002ae6c4b6abe7e30f91060 data\realschool\loot_table\blocks\gypsum_block.json
 977bbd99010ca60f326e288c680d9ba54fd3ab24 data\realschool\loot_table\blocks\limestone.json
 58e71d12a4c831007e899102a6a6d5a86b1054cb data\realschool\loot_table\blocks\chalk_block.json

@@ -7,7 +7,9 @@ import org.slf4j.LoggerFactory;
 import papercliper.realschool.block.ModBlocks;
 import papercliper.realschool.item.ModItemGroups;
 import papercliper.realschool.item.ModItems;
+import papercliper.realschool.entity.ModEntities;
 import papercliper.realschool.mixin.GrassColorsMixin;
+import papercliper.realschool.world.ModWorldGeneration;
 
 public class RealSchool implements ModInitializer {
 	public static final String MOD_ID = "realschool";
@@ -24,6 +26,9 @@ public class RealSchool implements ModInitializer {
 		ModItemGroups.registerModItemGroups();
 //		调用方块初始化方法
 		ModBlocks.registerModBlocks();
+		ModEntities.registerModEntities();
+//		调用世界生成初始化方法
+//		ModWorldGeneration.generateModWorldGen();
 
 //		___以下为测试用代码___
 //		获取当前的草地颜色映射数组

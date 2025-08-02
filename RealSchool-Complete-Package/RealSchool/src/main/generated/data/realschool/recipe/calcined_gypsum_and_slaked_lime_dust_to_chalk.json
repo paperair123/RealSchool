@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "realschool:calcined_gypsum"
+    },
+    {
+      "item": "realschool:slaked_lime_dust"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "realschool:chalk"
+  }
+}

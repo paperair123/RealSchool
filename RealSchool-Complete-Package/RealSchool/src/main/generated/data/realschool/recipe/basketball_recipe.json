@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:leather"
+    },
+    "Y": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XYX",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "realschool:basketball"
+  }
+}
