@@ -26,7 +26,7 @@ public class ModZHCNLanProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.SLAKED_LIME_DUST.getTranslationKey(), "熟石灰粉");
         translationBuilder.add(ModItems.PENCIL_COOKIE.getTranslationKey(), "铅笔饼干");
         translationBuilder.add(ModItems.EXERCISE_BOOK.getTranslationKey(), "练习册");
-        translationBuilder.add(ModItems.PROSPECTOR.getTranslationKey(), "探矿者");
+        translationBuilder.add(ModItems.PROSPECTOR.getTranslationKey(), "探矿器");
         translationBuilder.add(ModItems.BAD_APPLE.getTranslationKey(), "坏苹果");
         translationBuilder.add(ModItems.MEMORY_BREAD.getTranslationKey(), "记忆面包");
         translationBuilder.add(ModItems.QUICKLIME.getTranslationKey(), "生石灰");

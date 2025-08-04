@@ -9,6 +9,8 @@ import papercliper.realschool.item.ModItemGroups;
 import papercliper.realschool.item.ModItems;
 import papercliper.realschool.entity.ModEntities;
 import papercliper.realschool.mixin.GrassColorsMixin;
+import papercliper.realschool.tags.ModBlockTags;
+import papercliper.realschool.tags.ModItemTags;
 import papercliper.realschool.world.ModWorldGeneration;
 
 public class RealSchool implements ModInitializer {
@@ -26,6 +28,9 @@ public class RealSchool implements ModInitializer {
 		ModItemGroups.registerModItemGroups();
 //		调用方块初始化方法
 		ModBlocks.registerModBlocks();
+//		调用Tags初始化方法
+		ModBlockTags.registerModBlockTags();
+		ModItemTags.registerModItemTags();
 		ModEntities.registerModEntities();
 //		调用世界生成初始化方法
 //		ModWorldGeneration.generateModWorldGen();

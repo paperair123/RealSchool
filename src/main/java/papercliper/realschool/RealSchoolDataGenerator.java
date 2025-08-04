@@ -10,6 +10,7 @@ public class RealSchoolDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(ModBlockTagsProvider::new);
+		pack.addProvider(ModItemTagsProvider::new);
 		pack.addProvider(ModRecipesProvider::new);
 		pack.addProvider(ModModelsProvider::new);
 		pack.addProvider(ModENUSLanProvider::new);
@@ -17,6 +18,7 @@ public class RealSchoolDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModZHCNLanProvider::new);
 		pack.addProvider(ModConfiguredFeatureProvider::new);
 		pack.addProvider(ModPlacedFeatureProvider::new);
+
 
 
 

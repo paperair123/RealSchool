@@ -17,6 +17,7 @@ import net.minecraft.util.Identifier;
 import papercliper.realschool.RealSchool;
 import papercliper.realschool.block.ModBlocks;
 import papercliper.realschool.item.ModItems;
+import papercliper.realschool.tags.ModItemTags;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -60,8 +61,8 @@ public class ModRecipesProvider extends FabricRecipeProvider {
 //      在这里编写有序合成配方，详见模组开发手记3.5.4中的内容
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SUGAR, 3)
                 .pattern("###")
-                .input('#', Ingredient.ofItems(Items.BEETROOT))
-                .criterion("has_beetroot", RecipeProvider.conditionsFromItem(Items.BEETROOT))
+                .input('#', ModItemTags.SUGAR_TAG)
+                .criterion("has_beetroot", RecipeProvider.conditionsFromTag(ModItemTags.SUGAR_TAG))
                 .offerTo(exporter, Identifier.of(RealSchool.MOD_ID, "beetroot_to_sugar"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BASKETBALL, 1)
                 .pattern(" X ")

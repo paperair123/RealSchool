@@ -1,3 +1,4 @@
-// 1.21	2025-08-02T18:18:25.3349396	RealSchool/Tags for minecraft:block
+// 1.21	2025-08-05T00:48:03.4080079	RealSchool/Tags for minecraft:block
 9b41b532b914a6ebb9e59bda1933c34a2a1ecacf data\minecraft\tags\block\mineable\pickaxe.json
 c0c9c938f0cfa0dc34aeaf184605e8ac3a2d313c data\minecraft\tags\block\needs_stone_tool.json
+2f7c76062d001662a8a846455e6c1de6cc916842 data\realschool\tags\block\ore_list.json

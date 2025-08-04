@@ -2,7 +2,7 @@
 
 *上一次编辑日期：*
 $$
-2025年7月24日
+2025年8月5日
 $$
 
 ### 一、物品的注册
@@ -283,3 +283,86 @@ public class ExampleMixin {
 
 ​	以上代码实现了在游戏加载世界过程中在控制台输出”Hello Minecraft!“的功能，实际上会在控制台输出`[Server thread/INFO] (Minecraft) [STDOUT]: Hello Minecraft!`
 
+### 五、Tags
+
+​	Tags是游戏中很重要的一个概念。它代表了一类物品的集合，如”木板“、”羊毛“、”床“等具有多种材质或颜色的方块或物品；也可以表示”矿石“等一类方块。当然，我们也可以自定义一个Tag，将部分物品列入Tag中，这对于配方表的制定和物品的判定有很大的帮助。
+
+​	模组的Tags可以和原版一样，分成Block和Item两类。分别位于`papercliper/realschool/tags/ModBlockTags.java`和`papercliper/realschool/tags/ModItemTags.java`文件中。以下是BlockTags的代码文件示例。
+
+文件`papercliper/realschool/tags/ModBlockTags.java`
+```java
+package papercliper.realschool.tags;
+
+import net.minecraft.block.Block;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
+import papercliper.realschool.RealSchool;
+
+public class ModBlockTags {
+    public static final TagKey<Block> ORE_LIST = of("ore_list");// 这一行就是我们自定义的Tag的名称
+    private static TagKey<Block> of(String id) {
+        return TagKey.of(RegistryKeys.BLOCK, Identifier.of(RealSchool.MOD_ID, id));
+    }
+    public static void registerModBlockTags() {
+        RealSchool.LOGGER.info("Registering Block Tags...");
+    }
+}
+```
+
+​	与此同时，我们需要在数据生成器内完成Tags内容的添加和数据生成。
+
+文件`papercliper/realschool/datagen/ModBlockTagsProvider.java`
+```java
+package papercliper.realschool.datagen;
+
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
+import papercliper.realschool.block.ModBlocks;
+import papercliper.realschool.tags.ModBlockTags;
+
+import java.util.concurrent.CompletableFuture;
+
+public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
+    public ModBlockTagsProvider(FabricDataOutput output,
+                                CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        super(output, registriesFuture);
+    }
+    @Override
+    protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+//              需要镐子采集的方块
+                .add(ModBlocks.CHALK_BLOCK)
+                .add(ModBlocks.GYPSUM_ORE)
+                .add(ModBlocks.LIMESTONE)
+                .add(ModBlocks.GYPSUM_BLOCK)
+                .add(ModBlocks.BAUXITE_ORE)
+                .add(ModBlocks.COPPER_NICKEL_ORE);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+//              需要石质工具采集的方块
+                .add(ModBlocks.LIMESTONE)
+                .add(ModBlocks.BAUXITE_ORE);
+
+        getOrCreateTagBuilder(ModBlockTags.ORE_LIST)
+//              自定义的矿石列表标签，用于探矿器探测矿石
+//              模组矿石
+                .add(ModBlocks.GYPSUM_ORE)
+                .add(ModBlocks.BAUXITE_ORE)
+                .add(ModBlocks.COPPER_NICKEL_ORE)
+//              原版主世界的矿石
+                .forceAddTag(BlockTags.COAL_ORES)
+                .forceAddTag(BlockTags.IRON_ORES)
+                .forceAddTag(BlockTags.GOLD_ORES)
+                .forceAddTag(BlockTags.DIAMOND_ORES)
+                .forceAddTag(BlockTags.EMERALD_ORES)
+                .forceAddTag(BlockTags.LAPIS_ORES)
+                .forceAddTag(BlockTags.REDSTONE_ORES)
+                .forceAddTag(BlockTags.COPPER_ORES);
+    }
+}
+```
+
+​	这样，我们就定义了一个标签”ore_list“，包含了模组和原版主世界中的所有矿石。
