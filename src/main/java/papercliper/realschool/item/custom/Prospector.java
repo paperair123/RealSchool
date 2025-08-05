@@ -11,6 +11,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import papercliper.realschool.tags.ModBlockTags;
 
 public class Prospector extends Item {
     public Prospector(Settings settings) {
@@ -69,7 +70,7 @@ public class Prospector extends Item {
     }
 
     private boolean isRightBlock(BlockState blockState) {
-        if (blockState.isOf(Blocks.DIAMOND_ORE) || blockState.isOf(Blocks.IRON_ORE)) {
+        if (blockState.isIn(ModBlockTags.ORE_LIST)) {
             return true;
         } else {
             return false;

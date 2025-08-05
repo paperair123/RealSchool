@@ -1,0 +1,17 @@
+{
+  "block.realschool.chalk_block": "粉笔块",
+  "block.realschool.gypsum_block": "石膏块",
+  "block.realschool.gypsum_ore": "石膏矿石",
+  "block.realschool.limestone": "石灰石",
+  "item.realschool.bad_apple": "虫蚀苹果",
+  "item.realschool.basketball": "篮球",
+  "item.realschool.calcined_gypsum": "熟石膏",
+  "item.realschool.chalk": "粉笔",
+  "item.realschool.exercise_book": "必刷题",
+  "item.realschool.memory_bread": "记忆面包",
+  "item.realschool.pencil_cookie": "铅笔饼干",
+  "item.realschool.prospector": "探矿器",
+  "item.realschool.raw_gypsum": "生石膏",
+  "item.realschool.slaked_lime_dust": "熟石灰粉",
+  "itemGroup.realschool_group": "真实学校"
+}

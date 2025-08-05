@@ -17,6 +17,7 @@ import net.minecraft.util.Identifier;
 import papercliper.realschool.RealSchool;
 import papercliper.realschool.block.ModBlocks;
 import papercliper.realschool.item.ModItems;
+import papercliper.realschool.tags.ModItemTags;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -60,17 +61,17 @@ public class ModRecipesProvider extends FabricRecipeProvider {
 //      在这里编写有序合成配方，详见模组开发手记3.5.4中的内容
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.SUGAR, 3)
                 .pattern("###")
-                .input('#', Ingredient.ofItems(Items.BEETROOT))
-                .criterion("has_beetroot", RecipeProvider.conditionsFromItem(Items.BEETROOT))
+                .input('#', ModItemTags.SUGAR_TAG)
+                .criterion("has_beetroot", RecipeProvider.conditionsFromTag(ModItemTags.SUGAR_TAG))
                 .offerTo(exporter, Identifier.of(RealSchool.MOD_ID, "beetroot_to_sugar"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BASKETBALL, 1)
-                .pattern("XXX")
-                .pattern("XYX")
-                .pattern("XXX")
+                .pattern(" X ")
+                .pattern("XDX")
+                .pattern(" X ")
                 .input('X', Ingredient.ofItems(Items.LEATHER))
-                .input('Y', Ingredient.ofItems(Items.SLIME_BALL))
+                .input('D', Ingredient.ofItems(Items.BLACK_DYE))
                 .criterion("has_leather", RecipeProvider.conditionsFromItem(Items.LEATHER))
-                .criterion("has_slime_ball", RecipeProvider.conditionsFromItem(Items.SLIME_BALL))
+                .criterion("has_black_dye", RecipeProvider.conditionsFromItem(Items.BLACK_DYE))
                 .offerTo(exporter, Identifier.of(RealSchool.MOD_ID, "basketball_recipe"));
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.EXERCISE_BOOK, 1)
                 .pattern("SSS")
@@ -109,5 +110,14 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion("has_book", RecipeProvider.conditionsFromItem(Items.BOOK))
                 .criterion("has_bread", RecipeProvider.conditionsFromItem(Items.BREAD))
                 .offerTo(exporter, Identifier.of(RealSchool.MOD_ID, "memory_bread"));
+
+        offerSmelting(exporter, List.of(ModBlocks.BAUXITE_ORE), RecipeCategory.MISC, ModItems.ALUMINUM_INGOT, 0.7f, 200, "aluminum_ingot");
+        offerBlasting(exporter, List.of(ModBlocks.BAUXITE_ORE), RecipeCategory.MISC, ModItems.ALUMINUM_INGOT, 0.7f, 100, "aluminum_ingot");
+        offerSmelting(exporter, List.of(ModBlocks.COPPER_NICKEL_ORE), RecipeCategory.MISC, ModItems.NICKEL_INGOT, 0.7f, 200, "nickel_ingot");
+        offerBlasting(exporter, List.of(ModBlocks.COPPER_NICKEL_ORE), RecipeCategory.MISC, ModItems.NICKEL_INGOT, 0.7f, 100, "nickel_ingot");
+        offerSmelting(exporter, List.of(ModBlocks.LIMESTONE), RecipeCategory.MISC, ModItems.QUICKLIME, 0.35f, 200, "quicklime");
+        offerBlasting(exporter, List.of(ModBlocks.LIMESTONE), RecipeCategory.MISC, ModItems.QUICKLIME, 0.35f, 100, "quicklime");
     }
+
 }
+

@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "D": {
+      "item": "minecraft:black_dye"
+    },
     "X": {
       "item": "minecraft:leather"
-    },
-    "Y": {
-      "item": "minecraft:slime_ball"
     }
   },
   "pattern": [
-    "XXX",
-    "XYX",
-    "XXX"
+    " X ",
+    "XDX",
+    " X "
   ],
   "result": {
     "count": 1,
